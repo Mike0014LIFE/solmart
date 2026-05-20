@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Gadgets — SolMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>🚚 Free delivery on orders over ₦5,000 within Lagos</span>
+    <div class="topbar-links">
+      <a href="#">Sell on SolMart</a>
+      <a href="#">Track order</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Sol<span>Mart</span></a>
+    <div class="nav-search">
+      <input type="text" placeholder="Search products, categories, sellers..." />
+      <button type="button">Search</button>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-cart" onclick="checkoutWhatsApp()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Cart <span class="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+  <div class="cat-nav">
+    <a href="../index.html">All</a>
+    <a href="livestock.html">Livestock</a>
+    <a href="food-bulk.html">Food &amp; Bulk</a>
+    <a href="family-supplies.html">Family Supplies</a>
+    <a href="spices.html">Spices</a>
+    <a href="agro-commodities.html">Agro Commodities</a>
+    <a href="crafts-trades.html">Crafts &amp; Trades</a>
+    <a href="home-med.html">Home &amp; Med</a>
+    <a href="student-gadgets.html" class="active">Student Gadgets</a>
+    <a href="services.html">Services</a>
+    <a href="land-property.html">Land &amp; Property</a>
+    <a href="solfood.html">SolFood</a>
+    <a href="sol-digital.html">Sol Digital</a>
+  </div>
+  <div class="page-header">
+    <div class="page-wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Student Gadgets</span>
+      </div>
+      <h1>💻 Student Gadgets</h1>
+      <p>Laptops, phones and accessories for students and young professionals.</p>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="page-wrap">
+      <div class="filter-inner">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Laptops</button><button class="filter-btn">Phones</button><button class="filter-btn">Accessories</button><button class="filter-btn">Power</button><button class="filter-btn">Audio</button><button class="filter-btn">Storage</button>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="section">
+      <div class="product-grid-lg">
+        
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=80" alt="Fairly Used HP Laptop (Core i5, 8GB)" loading="lazy" />
+            <span class="product-badge ">HOT</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Fairly Used HP Laptop (Core i5, 8GB)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦185,000</span>
+              <span class="product-old-price">₦220,000</span>
+            </div>
+            <div class="product-seller">⭐ TechHub Ikeja</div>
+            <button class="btn-add-cart" onclick="addToCart('gadget-001', 'Fairly Used HP Laptop (Core i5, 8GB)', 185000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&q=80" alt="Tecno Spark 20 Pro (256GB)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Tecno Spark 20 Pro (256GB)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦98,000</span>
+              <span class="product-old-price">₦105,000</span>
+            </div>
+            <div class="product-seller">⭐ PhoneZone Lagos</div>
+            <button class="btn-add-cart" onclick="addToCart('gadget-002', 'Tecno Spark 20 Pro (256GB)', 98000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Wireless Earbuds (Noise Cancelling)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Wireless Earbuds (Noise Cancelling)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦22,000</span>
+              <span class="product-old-price">₦26,000</span>
+            </div>
+            <div class="product-seller">⭐ GadgetPlug Abuja</div>
+            <button class="btn-add-cart" onclick="addToCart('gadget-003', 'Wireless Earbuds (Noise Cancelling)', 22000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&q=80" alt="Universal Power Bank (20,000mAh)" loading="lazy" />
+            <span class="product-badge badge-new">NEW</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Universal Power Bank (20,000mAh)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦18,500</span>
+              
+            </div>
+            <div class="product-seller">⭐ PowerUp NG</div>
+            <button class="btn-add-cart" onclick="addToCart('gadget-004', 'Universal Power Bank (20,000mAh)', 18500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=500&q=80" alt="HP DeskJet Printer (All-in-one)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">HP DeskJet Printer (All-in-one)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦75,000</span>
+              <span class="product-old-price">₦82,000</span>
+            </div>
+            <div class="product-seller">⭐ TechHub Ikeja</div>
+            <button class="btn-add-cart" onclick="addToCart('gadget-005', 'HP DeskJet Printer (All-in-one)', 75000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=500&q=80" alt="256GB External SSD" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">256GB External SSD</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦32,000</span>
+              <span class="product-old-price">₦36,000</span>
+            </div>
+            <div class="product-seller">⭐ GadgetPlug Abuja</div>
+            <button class="btn-add-cart" onclick="addToCart('gadget-006', '256GB External SSD', 32000)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vendor-banner">
+      <div>
+        <h2>Sell Student Gadgets on SolMart</h2>
+        <p>Are you a supplier or vendor? Join SolMart and reach thousands of buyers across Nigeria.</p>
+      </div>
+      <button class="btn-vendor" onclick="window.open('https://wa.me/','_blank')">Become a vendor →</button>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Sol<span>Mart</span></div>
+          <p class="footer-desc">Nigeria's essential marketplace — connecting buyers and trusted sellers across West Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="browse.html">Browse categories</a>
+          <a href="#">Featured products</a>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sellers</h4>
+          <a href="#">Sell on SolMart</a>
+          <a href="#">Seller guidelines</a>
+          <a href="#">Become a partner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SolMart · A Raha Food &amp; Hospitality Group platform · Nigeria &amp; West Africa</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

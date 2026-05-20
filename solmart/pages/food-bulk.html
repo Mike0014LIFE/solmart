@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food & Bulk — SolMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>🚚 Free delivery on orders over ₦5,000 within Lagos</span>
+    <div class="topbar-links">
+      <a href="#">Sell on SolMart</a>
+      <a href="#">Track order</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Sol<span>Mart</span></a>
+    <div class="nav-search">
+      <input type="text" placeholder="Search products, categories, sellers..." />
+      <button type="button">Search</button>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-cart" onclick="checkoutWhatsApp()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Cart <span class="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+  <div class="cat-nav">
+    <a href="../index.html">All</a>
+    <a href="livestock.html">Livestock</a>
+    <a href="food-bulk.html" class="active">Food &amp; Bulk</a>
+    <a href="family-supplies.html">Family Supplies</a>
+    <a href="spices.html">Spices</a>
+    <a href="agro-commodities.html">Agro Commodities</a>
+    <a href="crafts-trades.html">Crafts &amp; Trades</a>
+    <a href="home-med.html">Home &amp; Med</a>
+    <a href="student-gadgets.html">Student Gadgets</a>
+    <a href="services.html">Services</a>
+    <a href="land-property.html">Land &amp; Property</a>
+    <a href="solfood.html">SolFood</a>
+    <a href="sol-digital.html">Sol Digital</a>
+  </div>
+  <div class="page-header">
+    <div class="page-wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Food & Bulk</span>
+      </div>
+      <h1>🍱 Food & Bulk</h1>
+      <p>Wholesale food supplies for restaurants, hotels, caterers and food businesses.</p>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="page-wrap">
+      <div class="filter-inner">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Rice</button><button class="filter-btn">Oils</button><button class="filter-btn">Grains</button><button class="filter-btn">Vegetables</button><button class="filter-btn">Beverages</button><button class="filter-btn">Condiments</button>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="section">
+      <div class="product-grid-lg">
+        
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&q=80" alt="Parboiled Rice (50kg bag)" loading="lazy" />
+            <span class="product-badge ">HOT</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Parboiled Rice (50kg bag)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦42,000</span>
+              <span class="product-old-price">₦45,000</span>
+            </div>
+            <div class="product-seller">⭐ GrainKing Supplies</div>
+            <button class="btn-add-cart" onclick="addToCart('food-001', 'Parboiled Rice (50kg bag)', 42000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80" alt="Palm Oil (25 litres keg)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Palm Oil (25 litres keg)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦18,500</span>
+              
+            </div>
+            <div class="product-seller">⭐ Delta Palm Co.</div>
+            <button class="btn-add-cart" onclick="addToCart('food-002', 'Palm Oil (25 litres keg)', 18500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Maize Flour (25kg)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Maize Flour (25kg)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦11,000</span>
+              <span class="product-old-price">₦12,500</span>
+            </div>
+            <div class="product-seller">⭐ FarmFirst Milling</div>
+            <button class="btn-add-cart" onclick="addToCart('food-003', 'Maize Flour (25kg)', 11000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=500&q=80" alt="Soya Beans (50kg bag)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Soya Beans (50kg bag)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦38,000</span>
+              
+            </div>
+            <div class="product-seller">⭐ NorthernCrops Ltd</div>
+            <button class="btn-add-cart" onclick="addToCart('food-004', 'Soya Beans (50kg bag)', 38000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31?w=500&q=80" alt="Onions (50kg bag)" loading="lazy" />
+            <span class="product-badge badge-bulk">BULK</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Onions (50kg bag)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦22,000</span>
+              <span class="product-old-price">₦25,000</span>
+            </div>
+            <div class="product-seller">⭐ Sokoto Fresh Farms</div>
+            <button class="btn-add-cart" onclick="addToCart('food-005', 'Onions (50kg bag)', 22000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1546554137-f86b9593a222?w=500&q=80" alt="Tomato Paste (24 tins carton)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Tomato Paste (24 tins carton)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦14,500</span>
+              <span class="product-old-price">₦16,000</span>
+            </div>
+            <div class="product-seller">⭐ RedGold Foods</div>
+            <button class="btn-add-cart" onclick="addToCart('food-006', 'Tomato Paste (24 tins carton)', 14500)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vendor-banner">
+      <div>
+        <h2>Sell Food & Bulk on SolMart</h2>
+        <p>Are you a supplier or vendor? Join SolMart and reach thousands of buyers across Nigeria.</p>
+      </div>
+      <button class="btn-vendor" onclick="window.open('https://wa.me/','_blank')">Become a vendor →</button>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Sol<span>Mart</span></div>
+          <p class="footer-desc">Nigeria's essential marketplace — connecting buyers and trusted sellers across West Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="browse.html">Browse categories</a>
+          <a href="#">Featured products</a>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sellers</h4>
+          <a href="#">Sell on SolMart</a>
+          <a href="#">Seller guidelines</a>
+          <a href="#">Become a partner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SolMart · A Raha Food &amp; Hospitality Group platform · Nigeria &amp; West Africa</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

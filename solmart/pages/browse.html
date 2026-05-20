@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browse Categories — SolMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .browse-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .browse-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s, border-color 0.15s, transform 0.15s;
+    }
+
+    .browse-card:hover {
+      box-shadow: var(--shadow);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .browse-emoji {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      flex-shrink: 0;
+    }
+
+    .browse-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .browse-card p {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .browse-card .browse-arrow {
+      margin-left: auto;
+      color: var(--muted-light);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .browse-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 1024px) {
+      .browse-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span>🚚 Free delivery on orders over ₦5,000 within Lagos</span>
+    <div class="topbar-links">
+      <a href="#">Sell on SolMart</a>
+      <a href="#">Track order</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Sol<span>Mart</span></a>
+    <div class="nav-search">
+      <input type="text" placeholder="Search products, categories, sellers..." />
+      <button type="button">Search</button>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-cart" onclick="checkoutWhatsApp()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Cart
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="cat-nav">
+    <a href="../index.html">All</a>
+    <a href="livestock.html">Livestock</a>
+    <a href="food-bulk.html">Food &amp; Bulk</a>
+    <a href="family-supplies.html">Family Supplies</a>
+    <a href="spices.html">Spices</a>
+    <a href="agro-commodities.html">Agro Commodities</a>
+    <a href="crafts-trades.html">Crafts &amp; Trades</a>
+    <a href="home-med.html">Home &amp; Med</a>
+    <a href="student-gadgets.html">Student Gadgets</a>
+    <a href="services.html">Services</a>
+    <a href="land-property.html">Land &amp; Property</a>
+    <a href="solfood.html">SolFood</a>
+    <a href="sol-digital.html">Sol Digital</a>
+  </div>
+
+  <div class="page-header">
+    <div class="page-wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>All Categories</span>
+      </div>
+      <h1>Browse all categories</h1>
+      <p>Everything you need — one marketplace.</p>
+    </div>
+  </div>
+
+  <div class="page-wrap">
+    <div class="section">
+      <div class="browse-grid">
+
+        <a href="livestock.html" class="browse-card fade-up fade-up-1">
+          <div class="browse-emoji" style="background:#DCFCE7;">🐄</div>
+          <div>
+            <h3>Livestock</h3>
+            <p>Fish, pigs, cattle, poultry and feedstock</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="food-bulk.html" class="browse-card fade-up fade-up-2">
+          <div class="browse-emoji" style="background:#FFF1E8;">🍱</div>
+          <div>
+            <h3>Food &amp; Bulk</h3>
+            <p>Wholesale food supplies for hospitality businesses</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="family-supplies.html" class="browse-card fade-up fade-up-3">
+          <div class="browse-emoji" style="background:#EFF6FF;">🛒</div>
+          <div>
+            <h3>Family Supplies</h3>
+            <p>Monthly food orders for families and students</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="spices.html" class="browse-card fade-up fade-up-4">
+          <div class="browse-emoji" style="background:#FFF1E8;">🌶️</div>
+          <div>
+            <h3>Spices</h3>
+            <p>Essential Nigerian spices and condiments</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="agro-commodities.html" class="browse-card fade-up fade-up-5">
+          <div class="browse-emoji" style="background:#DCFCE7;">🌿</div>
+          <div>
+            <h3>Agro Commodities</h3>
+            <p>Cocoa, palm, rice, sesame and more</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="crafts-trades.html" class="browse-card fade-up fade-up-6">
+          <div class="browse-emoji" style="background:#F3F4F6;">🔨</div>
+          <div>
+            <h3>Crafts &amp; Trades</h3>
+            <p>Metalwork, crochet, furniture and artisan goods</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="home-med.html" class="browse-card fade-up fade-up-1">
+          <div class="browse-emoji" style="background:#FDF2F8;">🧴</div>
+          <div>
+            <h3>Home &amp; Med</h3>
+            <p>Skincare, haircare and health supplies via Hearth</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="student-gadgets.html" class="browse-card fade-up fade-up-2">
+          <div class="browse-emoji" style="background:#EFF6FF;">💻</div>
+          <div>
+            <h3>Student Gadgets</h3>
+            <p>Phones, laptops and accessories</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="services.html" class="browse-card fade-up fade-up-3">
+          <div class="browse-emoji" style="background:#DCFCE7;">🔧</div>
+          <div>
+            <h3>Services</h3>
+            <p>Construction, plumbing, landscaping and more</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="land-property.html" class="browse-card fade-up fade-up-4">
+          <div class="browse-emoji" style="background:#FFF1E8;">🏠</div>
+          <div>
+            <h3>Land &amp; Property</h3>
+            <p>Buy, sell or lease real estate across Nigeria</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="solfood.html" class="browse-card fade-up fade-up-5">
+          <div class="browse-emoji" style="background:#FDF2F8;">🍲</div>
+          <div>
+            <h3>SolFood</h3>
+            <p>Cooked meals from kitchens near you</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+        <a href="sol-digital.html" class="browse-card fade-up fade-up-6">
+          <div class="browse-emoji" style="background:#F3F4F6;">🎨</div>
+          <div>
+            <h3>Sol Digital Services</h3>
+            <p>Designers, engineers and creative professionals</p>
+          </div>
+          <span class="browse-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Sol<span>Mart</span></div>
+          <p class="footer-desc">Nigeria's essential marketplace — connecting buyers and trusted sellers across West Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="browse.html">Browse categories</a>
+          <a href="#">Featured products</a>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sellers</h4>
+          <a href="#">Sell on SolMart</a>
+          <a href="#">Seller dashboard</a>
+          <a href="#">Seller guidelines</a>
+          <a href="#">Become a partner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SolMart · A Raha Food &amp; Hospitality Group platform · Nigeria &amp; West Africa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

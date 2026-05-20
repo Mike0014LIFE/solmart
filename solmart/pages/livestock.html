@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livestock — SolMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>🚚 Free delivery on orders over ₦5,000 within Lagos</span>
+    <div class="topbar-links">
+      <a href="#">Sell on SolMart</a>
+      <a href="#">Track order</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Sol<span>Mart</span></a>
+    <div class="nav-search">
+      <input type="text" placeholder="Search products, categories, sellers..." />
+      <button type="button">Search</button>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-cart" onclick="checkoutWhatsApp()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Cart <span class="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+  <div class="cat-nav">
+    <a href="../index.html">All</a>
+    <a href="livestock.html" class="active">Livestock</a>
+    <a href="food-bulk.html">Food &amp; Bulk</a>
+    <a href="family-supplies.html">Family Supplies</a>
+    <a href="spices.html">Spices</a>
+    <a href="agro-commodities.html">Agro Commodities</a>
+    <a href="crafts-trades.html">Crafts &amp; Trades</a>
+    <a href="home-med.html">Home &amp; Med</a>
+    <a href="student-gadgets.html">Student Gadgets</a>
+    <a href="services.html">Services</a>
+    <a href="land-property.html">Land &amp; Property</a>
+    <a href="solfood.html">SolFood</a>
+    <a href="sol-digital.html">Sol Digital</a>
+  </div>
+  <div class="page-header">
+    <div class="page-wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Livestock</span>
+      </div>
+      <h1>🐄 Livestock</h1>
+      <p>Buy and sell feedstock, fish, pigs, cattle and more from verified farms and suppliers.</p>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="page-wrap">
+      <div class="filter-inner">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Fish</button><button class="filter-btn">Pigs</button><button class="filter-btn">Poultry</button><button class="filter-btn">Cattle</button><button class="filter-btn">Feedstock</button><button class="filter-btn">Fingerlings</button>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="section">
+      <div class="product-grid-lg">
+        
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=500&q=80" alt="Frozen Catfish (5kg pack)" loading="lazy" />
+            <span class="product-badge ">FRESH</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Frozen Catfish (5kg pack)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦12,000</span>
+              <span class="product-old-price">₦14,000</span>
+            </div>
+            <div class="product-seller">⭐ FreshCatch Farms</div>
+            <button class="btn-add-cart" onclick="addToCart('live-001', 'Frozen Catfish (5kg pack)', 12000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1563281577-a7be47e20db9?w=500&q=80" alt="Live Pig (Matured, 80kg+)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Live Pig (Matured, 80kg+)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦85,000</span>
+              
+            </div>
+            <div class="product-seller">⭐ PigMaster Farms</div>
+            <button class="btn-add-cart" onclick="addToCart('live-002', 'Live Pig (Matured, 80kg+)', 85000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&q=80" alt="Broiler Starter Feed (25kg)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Broiler Starter Feed (25kg)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦8,500</span>
+              <span class="product-old-price">₦9,200</span>
+            </div>
+            <div class="product-seller">⭐ NutriFeeds Nigeria</div>
+            <button class="btn-add-cart" onclick="addToCart('live-003', 'Broiler Starter Feed (25kg)', 8500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1558618047-f0ef2e91e4fa?w=500&q=80" alt="Smoked Tilapia (3kg)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Smoked Tilapia (3kg)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦9,500</span>
+              
+            </div>
+            <div class="product-seller">⭐ LakeView Fishery</div>
+            <button class="btn-add-cart" onclick="addToCart('live-004', 'Smoked Tilapia (3kg)', 9500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=500&q=80" alt="Dairy Cow (Holstein, in calf)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Dairy Cow (Holstein, in calf)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦420,000</span>
+              
+            </div>
+            <div class="product-seller">⭐ GreenPasture Ranch</div>
+            <button class="btn-add-cart" onclick="addToCart('live-005', 'Dairy Cow (Holstein, in calf)', 420000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?w=500&q=80" alt="Fish Pond Fingerlings (100 pcs)" loading="lazy" />
+            <span class="product-badge badge-new">NEW</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Fish Pond Fingerlings (100 pcs)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦6,500</span>
+              <span class="product-old-price">₦7,500</span>
+            </div>
+            <div class="product-seller">⭐ AquaFarm Ondo</div>
+            <button class="btn-add-cart" onclick="addToCart('live-006', 'Fish Pond Fingerlings (100 pcs)', 6500)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vendor-banner">
+      <div>
+        <h2>Sell Livestock on SolMart</h2>
+        <p>Are you a supplier or vendor? Join SolMart and reach thousands of buyers across Nigeria.</p>
+      </div>
+      <button class="btn-vendor" onclick="window.open('https://wa.me/','_blank')">Become a vendor →</button>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Sol<span>Mart</span></div>
+          <p class="footer-desc">Nigeria's essential marketplace — connecting buyers and trusted sellers across West Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="browse.html">Browse categories</a>
+          <a href="#">Featured products</a>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sellers</h4>
+          <a href="#">Sell on SolMart</a>
+          <a href="#">Seller guidelines</a>
+          <a href="#">Become a partner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SolMart · A Raha Food &amp; Hospitality Group platform · Nigeria &amp; West Africa</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

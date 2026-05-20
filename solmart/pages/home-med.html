@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home & Med — SolMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>🚚 Free delivery on orders over ₦5,000 within Lagos</span>
+    <div class="topbar-links">
+      <a href="#">Sell on SolMart</a>
+      <a href="#">Track order</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Sol<span>Mart</span></a>
+    <div class="nav-search">
+      <input type="text" placeholder="Search products, categories, sellers..." />
+      <button type="button">Search</button>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-cart" onclick="checkoutWhatsApp()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Cart <span class="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+  <div class="cat-nav">
+    <a href="../index.html">All</a>
+    <a href="livestock.html">Livestock</a>
+    <a href="food-bulk.html">Food &amp; Bulk</a>
+    <a href="family-supplies.html">Family Supplies</a>
+    <a href="spices.html">Spices</a>
+    <a href="agro-commodities.html">Agro Commodities</a>
+    <a href="crafts-trades.html">Crafts &amp; Trades</a>
+    <a href="home-med.html" class="active">Home &amp; Med</a>
+    <a href="student-gadgets.html">Student Gadgets</a>
+    <a href="services.html">Services</a>
+    <a href="land-property.html">Land &amp; Property</a>
+    <a href="solfood.html">SolFood</a>
+    <a href="sol-digital.html">Sol Digital</a>
+  </div>
+  <div class="page-header">
+    <div class="page-wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Home & Med</span>
+      </div>
+      <h1>🧴 Home & Med</h1>
+      <p>Skincare, haircare and health supplies powered by Hearth — affordable wellness for Nigerian families.</p>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="page-wrap">
+      <div class="filter-inner">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Skincare</button><button class="filter-btn">Haircare</button><button class="filter-btn">Supplements</button><button class="filter-btn">First Aid</button><button class="filter-btn">Baby Care</button><button class="filter-btn">Hygiene</button>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="section">
+      <div class="product-grid-lg">
+        
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Shea Butter Body Cream (250ml)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Shea Butter Body Cream (250ml)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦3,800</span>
+              <span class="product-old-price">₦4,500</span>
+            </div>
+            <div class="product-seller">⭐ Hearth Skincare</div>
+            <button class="btn-add-cart" onclick="addToCart('med-001', 'Shea Butter Body Cream (250ml)', 3800)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80" alt="Vitamin C Supplements (60 tabs)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Vitamin C Supplements (60 tabs)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦4,500</span>
+              <span class="product-old-price">₦5,000</span>
+            </div>
+            <div class="product-seller">⭐ Hearth Health</div>
+            <button class="btn-add-cart" onclick="addToCart('med-002', 'Vitamin C Supplements (60 tabs)', 4500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80" alt="African Black Soap (500g)" loading="lazy" />
+            <span class="product-badge ">HOT</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">African Black Soap (500g)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦2,200</span>
+              <span class="product-old-price">₦2,600</span>
+            </div>
+            <div class="product-seller">⭐ Hearth Skincare</div>
+            <button class="btn-add-cart" onclick="addToCart('med-003', 'African Black Soap (500g)', 2200)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80" alt="Natural Hair Growth Oil (100ml)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Natural Hair Growth Oil (100ml)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦5,500</span>
+              <span class="product-old-price">₦6,200</span>
+            </div>
+            <div class="product-seller">⭐ Hearth Haircare</div>
+            <button class="btn-add-cart" onclick="addToCart('med-004', 'Natural Hair Growth Oil (100ml)', 5500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=500&q=80" alt="First Aid Kit (Basic)" loading="lazy" />
+            <span class="product-badge badge-new">NEW</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">First Aid Kit (Basic)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦8,500</span>
+              
+            </div>
+            <div class="product-seller">⭐ MedReady NG</div>
+            <button class="btn-add-cart" onclick="addToCart('med-005', 'First Aid Kit (Basic)', 8500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1611241893603-3c359704e0ee?w=500&q=80" alt="Moringa Capsules (90 caps)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Moringa Capsules (90 caps)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦6,800</span>
+              <span class="product-old-price">₦7,500</span>
+            </div>
+            <div class="product-seller">⭐ Hearth Health</div>
+            <button class="btn-add-cart" onclick="addToCart('med-006', 'Moringa Capsules (90 caps)', 6800)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vendor-banner">
+      <div>
+        <h2>Sell Home & Med on SolMart</h2>
+        <p>Are you a supplier or vendor? Join SolMart and reach thousands of buyers across Nigeria.</p>
+      </div>
+      <button class="btn-vendor" onclick="window.open('https://wa.me/','_blank')">Become a vendor →</button>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Sol<span>Mart</span></div>
+          <p class="footer-desc">Nigeria's essential marketplace — connecting buyers and trusted sellers across West Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="browse.html">Browse categories</a>
+          <a href="#">Featured products</a>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sellers</h4>
+          <a href="#">Sell on SolMart</a>
+          <a href="#">Seller guidelines</a>
+          <a href="#">Become a partner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SolMart · A Raha Food &amp; Hospitality Group platform · Nigeria &amp; West Africa</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

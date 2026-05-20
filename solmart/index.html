@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolMart — Nigeria's Essential Marketplace</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+  <a href="index.html" class="nav-logo">Sol<span>Mart</span></a>
+  <div class="nav-search">
+    <input type="text" placeholder="Search products, categories, sellers..." />
+    <button type="button">Search</button>
+  </div>
+  <div class="nav-actions">
+    <a href="#" class="nav-signin">Sign in</a>
+    <a href="#" class="nav-register">Create account</a>
+    <button class="nav-cart" onclick="checkoutWhatsApp()">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+      </svg>
+      Cart
+      <span class="cart-count">0</span>
+    </button>
+  </div>
+</nav>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-wrap">
+
+  <!-- HERO -->
+  <div class="hero-wrap">
+    <div class="hero-main fade-up" style="background-image: url('../images/solmarttt.jpeg');">
+      <div class="hero-overlay"></div>
+      <h1>Pan-African<br><em>Marketplace</em></h1>
+      <p>From bulk food supplies to livestock, crafts, cooked meals, and digital services — trusted sellers across Nigeria and West Africa.</p>
+      <a href="pages/browse.html" class="btn-primary">Browse all categories</a>
+    </div>
+    <div class="hero-side">
+      <a href="pages/agro-commodities.html" class="side-banner side-banner-1">
+        <div class="side-banner-bg" style="background-image:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600&q=80')"></div>
+        <div class="side-banner-content">
+          <div class="banner-icon">🌿</div>
+          <h3>Fresh Agro Produce</h3>
+          <p>Cocoa, rice, palm &amp; more</p>
+        </div>
+      </a>
+      <a href="pages/solfood.html" class="side-banner side-banner-2">
+        <div class="side-banner-bg" style="background-image:url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80')"></div>
+        <div class="side-banner-content">
+          <div class="banner-icon">🍲</div>
+          <h3>SolFood</h3>
+          <p>Kitchens near you</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+    <!-- CATEGORIES -->
+    <div class="section">
+      <div class="section-head">
+        <h2>Shop by category</h2>
+        <a href="pages/browse.html">View all →</a>
+      </div>
+      <div class="category-grid">
+        <a href="pages/livestock.html" class="cat-card fade-up fade-up-1">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=300&q=80" alt="Livestock" loading="lazy" />
+          </div>
+          <span class="cat-name">Livestock</span>
+          <span class="cat-sub">Fish, pigs &amp; feed</span>
+        </a>
+        <a href="pages/food-bulk.html" class="cat-card fade-up fade-up-2">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&q=80" alt="Food & Bulk" loading="lazy" />
+          </div>
+          <span class="cat-name">Food &amp; Bulk</span>
+          <span class="cat-sub">Wholesale supplies</span>
+        </a>
+        <a href="pages/family-supplies.html" class="cat-card fade-up fade-up-3">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=300&q=80" alt="Family Supplies" loading="lazy" />
+          </div>
+          <span class="cat-name">Family Supplies</span>
+          <span class="cat-sub">Monthly orders</span>
+        </a>
+        <a href="pages/spices.html" class="cat-card fade-up fade-up-4">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=300&q=80" alt="Spices" loading="lazy" />
+          </div>
+          <span class="cat-name">Spices</span>
+          <span class="cat-sub">Essential spices</span>
+        </a>
+        <a href="pages/agro-commodities.html" class="cat-card fade-up fade-up-5">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=300&q=80" alt="Agro Commodities" loading="lazy" />
+          </div>
+          <span class="cat-name">Agro Commodities</span>
+          <span class="cat-sub">Cocoa, palm, rice</span>
+        </a>
+        <a href="pages/crafts-trades.html" class="cat-card fade-up fade-up-6">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80" alt="Crafts & Trades" loading="lazy" />
+          </div>
+          <span class="cat-name">Crafts &amp; Trades</span>
+          <span class="cat-sub">Metalwork, crochet</span>
+        </a>
+        <a href="pages/home-med.html" class="cat-card fade-up fade-up-1">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&q=80" alt="Home & Med" loading="lazy" />
+          </div>
+          <span class="cat-name">Home &amp; Med</span>
+          <span class="cat-sub">Via Hearth</span>
+        </a>
+        <a href="pages/student-gadgets.html" class="cat-card fade-up fade-up-2">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300&q=80" alt="Student Gadgets" loading="lazy" />
+          </div>
+          <span class="cat-name">Gadgets & Appliances</span>
+          <span class="cat-sub">Phones, laptops</span>
+        </a>
+        <a href="pages/services.html" class="cat-card fade-up fade-up-3">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=300&q=80" alt="Services" loading="lazy" />
+          </div>
+          <span class="cat-name">Services</span>
+          <span class="cat-sub">Construction &amp; more</span>
+        </a>
+        <a href="pages/land-property.html" class="cat-card fade-up fade-up-4">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=300&q=80" alt="Land & Property" loading="lazy" />
+          </div>
+          <span class="cat-name">Land &amp; Property</span>
+          <span class="cat-sub">Buy, sell, lease</span>
+        </a>
+        <a href="pages/solfood.html" class="cat-card fade-up fade-up-5">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&q=80" alt="SolFood" loading="lazy" />
+          </div>
+          <span class="cat-name">SolFood</span>
+          <span class="cat-sub">Cooked meals</span>
+        </a>
+        <a href="pages/sol-digital.html" class="cat-card fade-up fade-up-6">
+          <div class="cat-img-wrap">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&q=80" alt="Sol Digital" loading="lazy" />
+          </div>
+          <span class="cat-name">Sol Digital</span>
+          <span class="cat-sub">Design, dev &amp; more</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PROMO STRIP -->
+    <div class="promo-strip">
+      <div class="promo-card promo-card-1">
+        <div class="promo-icon">
+          <svg width="28" height="28" fill="none" stroke="#F97316" stroke-width="1.8" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div>
+          <h3>Fast Delivery</h3>
+          <p>Nationwide distribution across Nigeria &amp; West Africa</p>
+        </div>
+      </div>
+      <div class="promo-card promo-card-2">
+        <div class="promo-icon">
+          <svg width="28" height="28" fill="none" stroke="#16A34A" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <div>
+          <h3>Verified Sellers</h3>
+          <p>Every seller on SolMart is vetted and trusted</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED PRODUCTS -->
+    <div class="section">
+      <div class="section-head">
+        <h2>Featured products</h2>
+        <a href="pages/browse.html">See all →</a>
+      </div>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&q=80" alt="Cameroon Pepper" loading="lazy" />
+            <span class="product-badge">HOT</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Premium Cameroon Pepper (1kg)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦2,500</span>
+              <span class="product-old-price">₦3,200</span>
+            </div>
+            <div class="product-seller">⭐ SpiceHub Lagos</div>
+            <button class="btn-add-cart" onclick="addToCart('spice-001','Premium Cameroon Pepper (1kg)',2500)">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=400&q=80" alt="Catfish" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <div class="product-name">Frozen Catfish (5kg pack)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦12,000</span>
+            </div>
+            <div class="product-seller">⭐ FreshCatch Farms</div>
+            <button class="btn-add-cart" onclick="addToCart('live-001','Frozen Catfish (5kg pack)',12000)">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&q=80" alt="Cocoa Beans" loading="lazy" />
+            <span class="product-badge badge-bulk">BULK</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Local Cocoa Beans (50kg bag)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦85,000</span>
+              <span class="product-old-price">₦95,000</span>
+            </div>
+            <div class="product-seller">⭐ AgriGold Exports</div>
+            <button class="btn-add-cart" onclick="addToCart('agro-001','Local Cocoa Beans (50kg bag)',85000)">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&q=80" alt="Family Bundle" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <div class="product-name">Monthly Family Food Bundle</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦45,000</span>
+            </div>
+            <div class="product-seller">⭐ SolMart Essentials</div>
+            <button class="btn-add-cart" onclick="addToCart('fam-001','Monthly Family Food Bundle',45000)">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" alt="Shea Butter" loading="lazy" />
+            <span class="product-badge badge-new">NEW</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Shea Butter Body Cream (250ml)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦3,800</span>
+              <span class="product-old-price">₦4,500</span>
+            </div>
+            <div class="product-seller">⭐ Hearth Skincare</div>
+            <button class="btn-add-cart" onclick="addToCart('med-001','Shea Butter Body Cream (250ml)',3800)">Add to cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- OUR PLATFORMS -->
+<div class="section">
+  <div class="section-head">
+    <h2>Our platforms</h2>
+  </div>
+  <div class="platforms-grid">
+
+    <a href="pages/solfood.html" class="platform-card platform-hero" style="background-image:url('../images/solfood.jpeg');">
+      <div class="platform-overlay"></div>
+      <div class="platform-content">
+        <span class="platform-tag">Coming soon</span>
+        <h3>SolFood</h3>
+        <p>Hot meals from vetted kitchens across Nigerian cities. Real food, real fast.</p>
+      </div>
+    </a>
+
+    <a href="#" class="platform-card" style="background-image:url('../images/untwisted-1.jpeg');">
+      <div class="platform-overlay"></div>
+      <div class="platform-content">
+        <span class="platform-tag">Coming soon</span>
+        <h3>Untwisted</h3>
+        <p>A marketplace built for African hair vendors and beauty sellers.</p>
+      </div>
+    </a>
+
+    <a href="#" class="platform-card" style="background-image:url('../images/hearth.jpeg');">
+      <div class="platform-overlay"></div>
+      <div class="platform-content">
+        <span class="platform-tag">Coming soon</span>
+        <h3>Hearth</h3>
+        <p>Skincare, haircare and health — affordable wellness for every family.</p>
+      </div>
+    </a>
+
+    <a href="pages/sol-digital.html" class="platform-card" style="background-image:url('../images/sol-digital.jpeg');">
+      <div class="platform-overlay"></div>
+      <div class="platform-content">
+        <span class="platform-tag">Coming soon</span>
+        <h3>Sol Digital</h3>
+        <p>Designers, engineers and creatives for your projects.</p>
+      </div>
+    </a>
+
+    <a href="#" class="platform-card" style="background-image:url('../images/cafe-soul.jpeg');">
+      <div class="platform-overlay"></div>
+      <div class="platform-content">
+        <span class="platform-tag">Coming soon</span>
+        <h3>Cafe Soul</h3>
+        <p>A soulful dining experience — coming to a city near you.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+    <!-- VENDOR BANNER -->
+    <div class="vendor-banner">
+      <div>
+        <h2>Start selling on SolMart today</h2>
+        <p>Join hundreds of trusted vendors reaching buyers across Nigeria and West Africa.</p>
+      </div>
+      <button class="btn-vendor" onclick="window.open('https://wa.me/','_blank')">Become a partner →</button>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Sol<span>Mart</span></div>
+          <p class="footer-desc">Nigeria's essential marketplace — connecting buyers and trusted sellers across West Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="pages/browse.html">Browse categories</a>
+          <a href="#">Featured products</a>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sellers</h4>
+          <a href="#">Sell on SolMart</a>
+          <a href="#">Seller dashboard</a>
+          <a href="#">Seller guidelines</a>
+          <a href="#">Become a partner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SolMart · A Raha Food &amp; Hospitality Group platform · Nigeria &amp; West Africa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

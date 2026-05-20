@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spices — SolMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>🚚 Free delivery on orders over ₦5,000 within Lagos</span>
+    <div class="topbar-links">
+      <a href="#">Sell on SolMart</a>
+      <a href="#">Track order</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Sol<span>Mart</span></a>
+    <div class="nav-search">
+      <input type="text" placeholder="Search products, categories, sellers..." />
+      <button type="button">Search</button>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-cart" onclick="checkoutWhatsApp()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Cart <span class="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+  <div class="cat-nav">
+    <a href="../index.html">All</a>
+    <a href="livestock.html">Livestock</a>
+    <a href="food-bulk.html">Food &amp; Bulk</a>
+    <a href="family-supplies.html">Family Supplies</a>
+    <a href="spices.html" class="active">Spices</a>
+    <a href="agro-commodities.html">Agro Commodities</a>
+    <a href="crafts-trades.html">Crafts &amp; Trades</a>
+    <a href="home-med.html">Home &amp; Med</a>
+    <a href="student-gadgets.html">Student Gadgets</a>
+    <a href="services.html">Services</a>
+    <a href="land-property.html">Land &amp; Property</a>
+    <a href="solfood.html">SolFood</a>
+    <a href="sol-digital.html">Sol Digital</a>
+  </div>
+  <div class="page-header">
+    <div class="page-wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Spices</span>
+      </div>
+      <h1>🌶️ Spices</h1>
+      <p>Essential spices and condiments for every Nigerian kitchen. Sourced fresh from across the country.</p>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="page-wrap">
+      <div class="filter-inner">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Peppers</button><button class="filter-btn">Herbs</button><button class="filter-btn">Powder</button><button class="filter-btn">Blends</button><button class="filter-btn">Crayfish</button><button class="filter-btn">Organic</button>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="section">
+      <div class="product-grid-lg">
+        
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=80" alt="Premium Cameroon Pepper (1kg)" loading="lazy" />
+            <span class="product-badge ">HOT</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Premium Cameroon Pepper (1kg)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦2,500</span>
+              <span class="product-old-price">₦3,200</span>
+            </div>
+            <div class="product-seller">⭐ SpiceHub Lagos</div>
+            <button class="btn-add-cart" onclick="addToCart('spice-001', 'Premium Cameroon Pepper (1kg)', 2500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=500&q=80" alt="Ground Crayfish (500g)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Ground Crayfish (500g)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦3,800</span>
+              <span class="product-old-price">₦4,200</span>
+            </div>
+            <div class="product-seller">⭐ SeaSpice Bonny</div>
+            <button class="btn-add-cart" onclick="addToCart('spice-002', 'Ground Crayfish (500g)', 3800)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80" alt="Uziza Leaves (dried, 200g)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Uziza Leaves (dried, 200g)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦1,800</span>
+              
+            </div>
+            <div class="product-seller">⭐ HerbMarket Enugu</div>
+            <button class="btn-add-cart" onclick="addToCart('spice-003', 'Uziza Leaves (dried, 200g)', 1800)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=500&q=80" alt="Turmeric Powder (500g)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Turmeric Powder (500g)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦2,200</span>
+              <span class="product-old-price">₦2,600</span>
+            </div>
+            <div class="product-seller">⭐ SpiceHub Lagos</div>
+            <button class="btn-add-cart" onclick="addToCart('spice-004', 'Turmeric Powder (500g)', 2200)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=500&q=80" alt="Garlic Powder (500g)" loading="lazy" />
+            <span class="product-badge badge-new">NEW</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Garlic Powder (500g)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦1,900</span>
+              
+            </div>
+            <div class="product-seller">⭐ AromiNG</div>
+            <button class="btn-add-cart" onclick="addToCart('spice-005', 'Garlic Powder (500g)', 1900)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=80" alt="Suya Spice Mix (1kg)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Suya Spice Mix (1kg)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦3,200</span>
+              <span class="product-old-price">₦3,800</span>
+            </div>
+            <div class="product-seller">⭐ NorthernFlavours</div>
+            <button class="btn-add-cart" onclick="addToCart('spice-006', 'Suya Spice Mix (1kg)', 3200)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vendor-banner">
+      <div>
+        <h2>Sell Spices on SolMart</h2>
+        <p>Are you a supplier or vendor? Join SolMart and reach thousands of buyers across Nigeria.</p>
+      </div>
+      <button class="btn-vendor" onclick="window.open('https://wa.me/','_blank')">Become a vendor →</button>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Sol<span>Mart</span></div>
+          <p class="footer-desc">Nigeria's essential marketplace — connecting buyers and trusted sellers across West Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="browse.html">Browse categories</a>
+          <a href="#">Featured products</a>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sellers</h4>
+          <a href="#">Sell on SolMart</a>
+          <a href="#">Seller guidelines</a>
+          <a href="#">Become a partner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SolMart · A Raha Food &amp; Hospitality Group platform · Nigeria &amp; West Africa</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Supplies — SolMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>🚚 Free delivery on orders over ₦5,000 within Lagos</span>
+    <div class="topbar-links">
+      <a href="#">Sell on SolMart</a>
+      <a href="#">Track order</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Sol<span>Mart</span></a>
+    <div class="nav-search">
+      <input type="text" placeholder="Search products, categories, sellers..." />
+      <button type="button">Search</button>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-cart" onclick="checkoutWhatsApp()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Cart <span class="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+  <div class="cat-nav">
+    <a href="../index.html">All</a>
+    <a href="livestock.html">Livestock</a>
+    <a href="food-bulk.html">Food &amp; Bulk</a>
+    <a href="family-supplies.html" class="active">Family Supplies</a>
+    <a href="spices.html">Spices</a>
+    <a href="agro-commodities.html">Agro Commodities</a>
+    <a href="crafts-trades.html">Crafts &amp; Trades</a>
+    <a href="home-med.html">Home &amp; Med</a>
+    <a href="student-gadgets.html">Student Gadgets</a>
+    <a href="services.html">Services</a>
+    <a href="land-property.html">Land &amp; Property</a>
+    <a href="solfood.html">SolFood</a>
+    <a href="sol-digital.html">Sol Digital</a>
+  </div>
+  <div class="page-header">
+    <div class="page-wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Family Supplies</span>
+      </div>
+      <h1>🛒 Family Supplies</h1>
+      <p>Monthly food supplies for families and students. Order in bulk, save more, delivered to your door.</p>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="page-wrap">
+      <div class="filter-inner">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Bundles</button><button class="filter-btn">Rice & Grains</button><button class="filter-btn">Oils</button><button class="filter-btn">Breakfast</button><button class="filter-btn">Cleaning</button><button class="filter-btn">Beverages</button>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="section">
+      <div class="product-grid-lg">
+        
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&q=80" alt="Monthly Family Bundle (Family of 4)" loading="lazy" />
+            <span class="product-badge ">POPULAR</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Monthly Family Bundle (Family of 4)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦45,000</span>
+              <span class="product-old-price">₦50,000</span>
+            </div>
+            <div class="product-seller">⭐ SolMart Essentials</div>
+            <button class="btn-add-cart" onclick="addToCart('fam-001', 'Monthly Family Bundle (Family of 4)', 45000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1506484381205-f7945653044d?w=500&q=80" alt="Student Monthly Foodpack" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Student Monthly Foodpack</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦22,000</span>
+              
+            </div>
+            <div class="product-seller">⭐ SolMart Essentials</div>
+            <button class="btn-add-cart" onclick="addToCart('fam-002', 'Student Monthly Foodpack', 22000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80" alt="Cooking Oil &amp; Condiments Pack" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cooking Oil &amp; Condiments Pack</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦12,000</span>
+              <span class="product-old-price">₦14,000</span>
+            </div>
+            <div class="product-seller">⭐ KitchenBasics NG</div>
+            <button class="btn-add-cart" onclick="addToCart('fam-003', 'Cooking Oil &amp; Condiments Pack', 12000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&q=80" alt="Garri + Rice Combo (20kg each)" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Garri + Rice Combo (20kg each)</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦28,000</span>
+              <span class="product-old-price">₦32,000</span>
+            </div>
+            <div class="product-seller">⭐ GrainStore Abuja</div>
+            <button class="btn-add-cart" onclick="addToCart('fam-004', 'Garri + Rice Combo (20kg each)', 28000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?w=500&q=80" alt="Household Cleaning Supplies Pack" loading="lazy" />
+            <span class="product-badge badge-new">NEW</span>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Household Cleaning Supplies Pack</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦8,500</span>
+              
+            </div>
+            <div class="product-seller">⭐ CleanHome Nigeria</div>
+            <button class="btn-add-cart" onclick="addToCart('fam-005', 'Household Cleaning Supplies Pack', 8500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80" alt="Beverage &amp; Breakfast Pack" loading="lazy" />
+            
+          </div>
+          <div class="product-info">
+            <div class="product-name">Beverage &amp; Breakfast Pack</div>
+            <div class="product-price-wrap">
+              <span class="product-price">₦11,500</span>
+              <span class="product-old-price">₦13,000</span>
+            </div>
+            <div class="product-seller">⭐ MorningBoost Stores</div>
+            <button class="btn-add-cart" onclick="addToCart('fam-006', 'Beverage &amp; Breakfast Pack', 11500)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vendor-banner">
+      <div>
+        <h2>Sell Family Supplies on SolMart</h2>
+        <p>Are you a supplier or vendor? Join SolMart and reach thousands of buyers across Nigeria.</p>
+      </div>
+      <button class="btn-vendor" onclick="window.open('https://wa.me/','_blank')">Become a vendor →</button>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Sol<span>Mart</span></div>
+          <p class="footer-desc">Nigeria's essential marketplace — connecting buyers and trusted sellers across West Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="browse.html">Browse categories</a>
+          <a href="#">Featured products</a>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sellers</h4>
+          <a href="#">Sell on SolMart</a>
+          <a href="#">Seller guidelines</a>
+          <a href="#">Become a partner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SolMart · A Raha Food &amp; Hospitality Group platform · Nigeria &amp; West Africa</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
