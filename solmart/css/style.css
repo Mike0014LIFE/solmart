@@ -1041,7 +1041,7 @@ button {
   .vendor-banner       { flex-direction: column; text-align: center; }
   .vendor-banner p     { max-width: 100%; }
   .footer-grid         { grid-template-columns: 1fr 1fr; }
-  .hero-wrap           { padding: 0; }
+  .hero-wrap           { padding: 1rem 0 0; }
 }
 
 @media (max-width: 480px) {

@@ -4,9 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Browse Categories — SolMart</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
     .browse-grid {
@@ -64,12 +61,14 @@
       flex-shrink: 0;
     }
 
-    @media (max-width: 768px) {
-      .browse-grid { grid-template-columns: 1fr; }
+    @media (max-width: 1024px) {
+     .browse-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
-    @media (max-width: 1024px) {
-      .browse-grid { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 600px) {
+     .browse-grid { grid-template-columns: 1fr; }
+     .browse-card { padding: 1rem; gap: 0.875rem; }
+     .browse-emoji { width: 44px; height: 44px; font-size: 20px; }
     }
   </style>
 </head>
@@ -101,22 +100,6 @@
       </button>
     </div>
   </nav>
-
-  <div class="cat-nav">
-    <a href="../index.html">All</a>
-    <a href="livestock.html">Livestock</a>
-    <a href="food-bulk.html">Food &amp; Bulk</a>
-    <a href="family-supplies.html">Family Supplies</a>
-    <a href="spices.html">Spices</a>
-    <a href="agro-commodities.html">Agro Commodities</a>
-    <a href="crafts-trades.html">Crafts &amp; Trades</a>
-    <a href="home-med.html">Home &amp; Med</a>
-    <a href="student-gadgets.html">Student Gadgets</a>
-    <a href="services.html">Services</a>
-    <a href="land-property.html">Land &amp; Property</a>
-    <a href="solfood.html">SolFood</a>
-    <a href="sol-digital.html">Sol Digital</a>
-  </div>
 
   <div class="page-header">
     <div class="page-wrap">
